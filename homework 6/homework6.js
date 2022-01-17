@@ -9,7 +9,7 @@ function Cat(name) {
     };
 
     this.feed = function() {
-        console.log('Насыпаем в миску ' + formatFoodAmount() + ' корма.')
+        console.log('Насыпаем в миску ' + this.dailyNorm() + ' корма.')
     };
 
     this.dailyNorm = function(amount) {
@@ -32,21 +32,21 @@ barsik.dailyNorm();
 
 //Практическое 4 и 5
 function Animal(name) {
-    this._foodAmount = 0;
-    this._name = name;
+    var foodAmount = 0;
+    this.name = name;
     var self = this;
 
 
-    this.formatFoodAmount = function() {
-        return self._foodAmount + ' гр.'
+    function formatFoodAmount () {
+        return foodAmount + ' гр.'
     };
 
     this.feed = function() {
-        console.log('Насыпаем в миску ' + self.formatFoodAmount() + ' корма.')
+        console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.')
     };
 
     this.dailyNorm = function(amount) {
-        if (!arguments.length) return self.formatFoodAmount();
+        if (!arguments.length) return formatFoodAmount();
 
         if (amount < 50) {
             throw new Error('Будет мало');
@@ -54,7 +54,7 @@ function Animal(name) {
         if (amount > 100) {
             throw new Error('Объестся');
         }
-        self._foodAmount = amount;
+        foodAmount = amount;
     }
 }
 
