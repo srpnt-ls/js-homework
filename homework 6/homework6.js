@@ -21,7 +21,7 @@ function Cat(name) {
             throw new Error('Кот объестся');
         }
         foodAmount = amount;
-    }
+    };
 }
 
 var barsik = new Cat ('Barsik');
@@ -55,7 +55,7 @@ function Animal(name) {
             throw new Error('Объестся');
         }
         foodAmount = amount;
-    }
+    };
 }
 
 function Cat(name) {
