@@ -9,21 +9,17 @@ console.log(positiveArr);
 
 //Задание 2
 function findPositiveNum(arr) {
-    var positiveNum = arr.find(function (number) {
+    return arr.find(function (number) {
         return number > 0;
-    });
-    return positiveNum
+    })
 }
 
 findPositiveNum([-1, 0, 2, 34, -2])
 
 //Задание 3
 function isPalindrome(word) {
-    word = word.toLowerCase().split('');
-    for (var i = 0; i < (word.length / 2); i++) {
-        if (word[i] !== word[(word.length - 1) - i]) return false
-    }
-    return true
+    word = word.toLowerCase();
+    return word === word.split('').reverse().join('');
 }
 
 isPalindrome('шалаш');
