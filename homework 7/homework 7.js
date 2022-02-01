@@ -10,11 +10,11 @@ Animal.prototype._formatFoodAmount = function () {
 };
 
 Animal.prototype.feed = function () {
-    console.log('Насыпаем в миску ' + Animal.prototype.dailyNorm() + ' корма.')
+    console.log('Насыпаем в миску ' + this.dailyNorm() + ' корма.')
 };
 
 Animal.prototype.dailyNorm = function (amount) {
-    if (!arguments.length) return Animal.prototype._formatFoodAmount();
+    if (!arguments.length) return this._formatFoodAmount();
 
     if (amount < 50) {
         throw new Error('Будет мало');
