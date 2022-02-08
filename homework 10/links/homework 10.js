@@ -23,7 +23,7 @@ for (var i = 0; i < links2.length; i++) {
     links2[i].addEventListener('click', showLink)
 }
 
-//элемент задания из предыдущей домашки #10
+//элемент задания из домашки #10
 /*function showLink(event) {
   event.preventDefault();
   alert(this.getAttribute('href'));

@@ -2,7 +2,7 @@ var table = document.getElementsByTagName('table')[0];
 table.onclick = function (event) {
     var target = event.target;
 
-    if (target.tagName !== 'TD' || target.className.indexOf('button') > -1) return;
+    if (target.tagName !== 'TD' || target.classList.includes('button')) return;
     target.innerHTML = '<input type = "text" value = "' + target.innerHTML + '" onblur = "saveText(this)">';
     target.firstElementChild.focus();
     target.firstElementChild.select();

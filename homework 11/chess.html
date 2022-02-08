@@ -1,0 +1,26 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess-styles.css">
+</head>
+<body>
+<form>
+    <div class>
+        <label for="x">X:</label>
+        <input type="text" id="X" onkeyup="checkEmpty()">
+    </div>
+
+    <div class>
+        <label for="y">Y:</label>
+        <input type="text" id="Y" onkeyup="checkEmpty()">
+    </div>
+    <button type="button" onclick="checkInt();drawTable()" disabled>Create</button>
+    <table>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="chess-script.js"></script>
+</body>
+</html>
