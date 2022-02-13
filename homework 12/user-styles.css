@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    font-family: Arial;
+}
+
+body {
+    background-color: #dba9d3;
+}
+
+main {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+button {
+    float: right;
+    z-index: 1000;
+    height: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-right: 3px;
+}
+
+.users-info {
+    height: 200px;
+    width: 1000px;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin: 0 auto;
+    display: none;
+}
+
+.users-info img {
+    margin: 35px;
+    height: 115px;
+    width: 115px;
+    float: left;
+}
+
+.names {
+    padding-top: 50px;
+}
+
+.users-info p {
+    padding-left: 170px;
+}
+
+.tabs {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.active {
+    background-color: white !important;
+    color: black !important;
+}
+
+.user-tabs {
+    width: 90px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #a16897;
+    display: inline-block;
+    margin: 15px 3px 0 0;
+    text-align: center;
+    padding: 9px 0 8px;
+    color: #fcfafc;
+    cursor: default;
+}
+
+.info-block {
+    display: none;
+}
+
+.error-message {
+    display: block;
+    border-radius: 7px;
+}
+
+.error-message p {
+    padding: 5px 0 0 5px !important;
+}
