@@ -1,0 +1,49 @@
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.stopwatch {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+button {
+    margin: 10px 45px;
+    height: 25px;
+    font-size: 18px;
+    width: 60px;
+}
+
+.main-button {
+    padding: 0 165px;
+}
+
+.buttons {
+    display: none;
+    margin: 0 20px;
+    padding: 0 70px;
+}
+
+.records {
+    margin: 10px 190px;
+    font-size: 19px;
+}
+
+.table {
+    margin: 0 40px;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
